@@ -4,7 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi primera web</title>
+        <style>
+            .resaltado {
+                color: rgb(202, 18, 193);
+                font-weight: bold;
+            }
+            /* Centra todos los textos, imágenes y elementos de la página */
+            body {
+                text-align: center;
+            }
+
+            /* Opcional: si quieres que el botón tenga un espacio con los campos */
+            .btn-contenedor {
+                margin-top: 15px;
+            }
+        </style>
     </head> 
-    <body> </body>
+    <body> 
+        <h1 id="titulo" title="Encabezado principal">Bienvenidos a mi pagina web</h1>
+        <p class="resaltado" lang="es" dir="ltr"> Este es el contenido principal</p>
+
+        <!-- Insertar una foto-->
+        <img src="coche_rojo.png" alt="Descripcion de la imagen" width="200" height="100">
+
+        <!-- AccesKey para la navegacion rapida-->
+        <a href="#inicio" accesskey="i">Ir al inicio (Alt + i)</a> 
+
+        <!-- Ejemplo de tabindex-->
+        <br>
+            <input type="text" name="nombre" tabindex="2" placeholder="Nombre">
+            <input type="email" name="email" tabindex="1" placeholder="Correo electronico">
+
+            <!--Insertamos un salto de linea-->
+            <br><br>
+
+            <input type="submit" value="Enviar" tabindex="3">
+ 
+        </form>
+
+
+    </body>
     </html>
 
